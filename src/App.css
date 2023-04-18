@@ -1,0 +1,91 @@
+.App {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 50px 20px;
+	text-align: center;
+}
+
+.issue-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.issue {
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100% !important;
+	border-radius: 4px;
+	padding: 10px;
+	margin-bottom: 20px;
+	width: calc(33.33% - 10px);
+	transition: all 0.3s ease;
+}
+
+.issue h2 {
+	font-size: 24px;
+	margin-top: 0;
+}
+
+.issue p {
+	margin-bottom: 10px;
+}
+
+.issue.open {
+	background-color: #2196f3;
+}
+
+.issue.pending {
+	background-color: #ffc107;
+}
+
+.issue.closed {
+	background-color: #4caf50;
+}
+
+.issue:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.issue-container {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin-bottom: 20px;
+	padding: 10px;
+	justify-content: center;
+	align-items: center;
+}
+
+button {
+	background-color: #4caf50;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 5px;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+}
+
+.mark-as-closed-button:hover {
+	background-color: #3e8e41;
+}
+.mark-as-pending-button:hover {
+	background-color: #e1a900;
+}
+.mark-as-pending-button {
+	background-color: #ffc107;
+}
+
+.mark-as-closed-button {
+	background-color: #4caf50;
+}
